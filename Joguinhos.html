@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinhos.com</title>
+    <link rel="shortcut icon" href="img/film.png" type="image/x-icon">
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+crossorigin="anonymous"> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" 
+crossorigin="anonymous"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" 
+crossorigin="anonymous"></script> 
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			
+			
+			<img style="width:2%;" src="https://images.vexels.com/media/users/3/135991/isolated/preview/ee03f76ed0711b770c0c797d83bd2ea0-cone-do-controlador-de-jogos.png">
+			<a class="navbar-brand" style="margin-left: 3%;" href="#topo">Joguinhos.com</a>
+		
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		</div>
+	</nav>
+
+<div class="container">
+    <table style="margin-top: 3%;" class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Jogo</th>
+                <th scope="col">Produtor</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">Lançamento</th>
+                <th scope="col">Personagens</th>
+                <th scope="col">Nota Rotten Tomatoes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+     
+            <tr>
+                <th class="text-center table-primary" colspan="7" scope="row">Jogos</th>
+            <tr>
+            <tr id="inserirTabela">
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Aqui é para cadastrar os jogos -->
+
+<div class="m-5">
+    <hr class="border-primary border-3 opacity-65">
+</div> 
+
+    <h2 class="text-center mb-5">Cadastro de Jogos</h2>
+
+<div class="container mb-5">
+    <form name="cadastrar" onsubmit="event.preventDefault()">
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="codjog" class="form-label">Código:</label>
+                <input type="text" id="codigo" name="codigo" class="form-control" required>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="nomejog" class="form-label">Jogo:</label>
+                <input type="text" id="jogo" name="jogo" class="form-control" required>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="prodjog" class="form-label">Produtor:</label>
+                <input type="text" id="produtor" name="produtor" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="emprjog" class="form-label">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" class="form-control" required>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="lanjog" class="form-label">Data de lançamento:</label>
+                <input type="date" id="data" name="data" class="form-control"required >
+        </div>
+
+        <div class="mb-3 col">
+            <label for="perjog" class="form-label">Personagens:</label>
+            <input type="text" id="personagem" name="personagem" class="form-control" required>
+    </div>
+
+    <div class="mb-3 col">
+        <label for="notjog" class="form-label">Nota Rotten Tomatoes:</label>
+        <input type="text" id="nota" class="form-control" name="nota" placeholder="0-10"required >
+</div>
+
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3" onclick="insere()">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
